@@ -10,5 +10,4 @@ events accumulate enough to warrant their own pages — see
 
 ## Events
 
-- [TODO: YYYY-MM-DD — event title] — [TODO: one-line summary;
-  link to artifact, post, or release if applicable].
+- 2026-10-04 — Moved here from the homepage Lab and published at color.isayenko.net; the old isayenko.net/lab/ colour URLs redirect.

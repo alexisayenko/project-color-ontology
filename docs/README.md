@@ -21,7 +21,7 @@ This template assumes **one product, delivered through one or
 more top-level code folders** (`mobile/`, `web/`, `workers/`,
 `marketing-site/`, etc.). Name each folder by what it is.
 
-- [TODO: product name] — [TODO: one-line description].
+- Colour Ontology — an interactive study of ways to order screen colour (`web/`, served at color.isayenko.net).
 
 If a second product ever appears (rare), see
 [Multi-product split](#multi-product-split).

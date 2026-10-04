@@ -4,6 +4,10 @@ Stack, infrastructure, and architectural decisions. The "how it
 runs" layer — what's used to build and operate the product.
 Product / business / UX live in their own sections.
 
+## Current stack
+
+Eleventy 3, plain CSS, native ES modules (no bundler), Three.js r128 vendored in `web/assets/vendor/three/`. Hosted on Cloudflare Workers Static Assets: worker `color-ontology`, route `color.isayenko.net` (`custom_domain = true`). Node >= 22.9.
+
 ## Common slots
 
 Don't pre-create — extract on first real entry. See
@@ -21,4 +25,5 @@ Don't pre-create — extract on first real entry. See
 
 ## Open questions
 
-- [TODO: architectural decisions still open.]
+- Add CI (push to `main` -> build, test, deploy) like the homepage, or keep manual deploys.
+- Run the browser smoke test (`test/lab-smoke.mjs`) in CI; it needs Chromium via Playwright.

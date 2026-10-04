@@ -1,31 +1,32 @@
-# project-template
+# Colour Ontology
 
-Seed repo for new projects. Defines a standard folder layout,
-naming rules, and docs subtree. Copy on init; not used as a
-runtime dependency.
+Ways of ordering screen colour: the RGB cube, OKLCH and the hue wheel as views of the same colours, with names from CSS, Munsell and ISCC-NBS. Live at <https://color.isayenko.net>.
 
-## Overview
+## Pages
 
-This template assumes **one product, delivered through one or
-more top-level code folders** at the repo root. Each folder is a
-deployment target — name it by what it is (`mobile/`, `web/`,
-`workers/`, `marketing-site/`, etc.). Avoid generic names like
-`app/` that don't say which one.
+- `/` -- Colour solid: one page, three views (RGB cube, OKLCH, wheel), overlays, labels, glossary.
+- `/grid-colour-field/` -- nine colours in, a 9x9 mood x energy grid out (the colour field of the moene mood tracker).
 
-Multi-product is rare; see
-[`docs/README.md`](docs/README.md#multi-product-split) for the
-split path if/when it happens.
+## Stack
 
-## Quick start
+Eleventy 3 (Nunjucks + markdown), plain CSS, native ES modules with no bundler, Three.js r128 vendored. Hosted on Cloudflare Workers Static Assets (`color-ontology` worker, route `color.isayenko.net`). Needs Node >= 22.9.
 
-1. Click **Use this template** on GitHub (or `git clone` and
-   remove `.git/` to start fresh).
-2. Replace this Overview and Quick start with content for the
-   new project.
-3. Keep the [Structure](#structure) section — that's the
-   canonical convention.
-4. Fill in [`docs/README.md`](docs/README.md) with the project's
-   product and docs subtree.
+```sh
+npm install
+npm start          # local dev server
+npm run build      # -> _site/
+npm test           # colour maths + page tests; the browser smoke test skips without Chromium
+npm run names      # regenerate web/_data/colourNames.json (--check verifies)
+npm run deploy     # build + wrangler deploy (needs CLOUDFLARE_API_TOKEN)
+```
+
+## Code map
+
+- `web/index.md`, `web/grid-colour-field.md` -- page prose; `web/_data/colourGlossary.yml` -- glossary; `web/_data/colourSolid.js` -- controls data.
+- `web/_includes/lab/` -- controls panes and glossary partials.
+- `web/assets/lab/*.js` -- colour maths (`colour.js`, `palettes.js`, `names.js`), views and overlays; `colour-solid.js` is the entry point.
+- `scripts/build-colour-names.mjs` + `scripts/data/iscc-nbs.xml` -> `web/_data/colourNames.json`.
+- `lib/palette.mjs` -- the capsule-wardrobe swatch set behind the Capsule overlay.
 
 ## Structure
 
@@ -122,39 +123,3 @@ See [`docs/README.md`](docs/README.md) for:
 - The `Section, file, folder` rule (start small, extract on growth)
 - Per-folder `<folder>/docs/` policy
 - Multi-product split (rare)
-
-## Design rationale
-
-Why this template is shaped the way it is. It's *more
-structured* than industry default for solo-founder projects, but
-every choice is a defensible divergence rather than an
-anti-pattern.
-
-**Aligned with established best practices:** README.md as folder
-entry doc (GitHub auto-renders), kebab-case.md filenames
-(case-safe), conventional commits, YAML frontmatter on docs
-(Jekyll / Hugo / MkDocs convention), ADRs (Michael Nygard's
-spec), glossary-driven vocabulary discipline (Eric Evans' DDD
-ubiquitous language), separating product specs from
-implementation (clean architecture), atomic commits referencing
-tasks.
-
-**Defensible divergences from common defaults:** tasks as
-markdown files (instead of Jira / Linear / GitHub Issues —
-portable, greppable, git-tracked, AI-readable; cost: harder to
-query at scale); the verb / noun split between concepts and
-features (this is DDD, rigorously applied); heavy doc
-scaffolding upfront (closer to the "docs as first-class
-artifact" school — Stripe, Diataxis — than to agile's "defer
-docs" tradition).
-
-**Original framings:** `concept = noun`, `feature = verb`,
-`screen = place` as a strict three-way taxonomy (DDD-flavored
-but specific); concerns axis (`C1, C2, …` — industry
-equivalents are epics, OKRs, work-streams); each top-level code
-folder named for what it is rather than fitting under a
-unifying noun.
-
-Bottom line: nothing here is anti-pattern. Heavyweight for
-throwaway experiments; benefit is that a project stays
-organized as it grows without needing a mid-life restructure.

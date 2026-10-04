@@ -1,10 +1,8 @@
 # Product
 
-[TODO: one paragraph — the product's core idea, the mechanic, the
-value to the user. State the load-bearing tension in plain terms.]
+Colour Ontology orders screen colour in more than one way and keeps the views consistent: the same colours, placed by RGB channels, by lightness-chroma-hue, and on a flat hue wheel, each with its names. The tension: a tidy cube is not what the eye sees, and the page shows both.
 
-[TODO: one line — purpose. What this product enables that wasn't
-possible (or wasn't easy) before.]
+Purpose: see where a colour sits and what it is called, instead of reading about it.
 
 For the wider docs/ map and what-lives-where, see
 [`../README.md`](../README.md).
@@ -73,7 +71,4 @@ technically could. Externally-imposed obligations (licensing,
 compliance, attribution) live in
 [`../business/compliance.md`](../business/compliance.md), not here.
 
-- **[TODO: load-bearing constraint — e.g. "free X, paid Y", "no
-  live data", "single-user only" — the tension that shapes
-  feature scope]**
-- **[TODO: secondary constraint, or remove this bullet if none]**
+- **Static and client-side only** -- no accounts, no backend; saved view settings live in the visitor's browser.

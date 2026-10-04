@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if page.url == "/" %}{{ title }}{% else %}{{ title }} — Colour Ontology{% endif %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/style.css?v={{ buildId }}" />
+    {%- for s in styles %}
+    <link rel="stylesheet" href="/assets/{{ s }}?v={{ buildId }}" />
+    {%- endfor %}
+  </head>
+  <body>
+    <header class="masthead">
+      <h1 class="name"><a href="/" style="color:inherit">Colour Ontology</a></h1>
+      <div class="rule"></div>
+      <nav class="nav">
+        <a href="/">Colour solid</a>
+        <a href="/grid-colour-field/">Grid colour field</a>
+        <a href="https://isayenko.net">Alex Isayenko</a>
+        <a href="https://github.com/alexisayenko/project-color-ontology">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <div>© {{ year }} Alex Isayenko</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1124 @@
+{
+ "400000": {
+  "css": "maroon",
+  "cssExact": false,
+  "munsell": "2.9YR 0.9/6.5",
+  "iscc": "deep brown"
+ },
+ "400040": {
+  "css": "indigo",
+  "cssExact": false,
+  "munsell": "9.8P 1.2/8.8",
+  "iscc": "very deep reddish purple"
+ },
+ "400080": {
+  "css": "indigo",
+  "cssExact": false,
+  "munsell": "9.7PB 1.9/16.0",
+  "iscc": "vivid violet"
+ },
+ "404000": {
+  "css": "darkslategray",
+  "cssExact": false,
+  "munsell": "0.5GY 2.6/5.3",
+  "iscc": "moderate olive"
+ },
+ "404040": {
+  "css": "darkslategray",
+  "cssExact": false,
+  "munsell": "N 2.7/",
+  "iscc": "dark gray"
+ },
+ "404080": {
+  "css": "darkslateblue",
+  "cssExact": false,
+  "munsell": "8.4PB 3.0/8.6",
+  "iscc": "deep purplish blue"
+ },
+ "406080": {
+  "css": "dimgray",
+  "cssExact": false,
+  "munsell": "2.9PB 3.9/5.1",
+  "iscc": "moderate blue"
+ },
+ "408000": {
+  "css": "green",
+  "cssExact": false,
+  "munsell": "7.5GY 4.7/9.9",
+  "iscc": "strong yellow green"
+ },
+ "408040": {
+  "css": "seagreen",
+  "cssExact": false,
+  "munsell": "10.0GY 4.7/7.3",
+  "iscc": "strong yellowish green"
+ },
+ "408060": {
+  "css": "seagreen",
+  "cssExact": false,
+  "munsell": "4.0G 4.8/5.4",
+  "iscc": "moderate green"
+ },
+ "408080": {
+  "css": "teal",
+  "cssExact": false,
+  "munsell": "7.5BG 4.9/4.4",
+  "iscc": "moderate bluish green"
+ },
+ "604080": {
+  "css": "darkslateblue",
+  "cssExact": false,
+  "munsell": "2.5P 3.3/8.7",
+  "iscc": "moderate violet"
+ },
+ "608040": {
+  "css": "seagreen",
+  "cssExact": false,
+  "munsell": "6.8GY 4.9/5.9",
+  "iscc": "moderate yellow green"
+ },
+ "800000": {
+  "css": "maroon",
+  "cssExact": true,
+  "munsell": "0.5YR 2.5/11.4",
+  "iscc": "strong reddish brown"
+ },
+ "800040": {
+  "css": "maroon",
+  "cssExact": false,
+  "munsell": "9.5RP 2.7/10.7",
+  "iscc": "deep purplish red"
+ },
+ "800080": {
+  "css": "purple",
+  "cssExact": true,
+  "munsell": "8.6P 3.0/14.4",
+  "iscc": "vivid purple"
+ },
+ "804000": {
+  "css": "saddlebrown",
+  "cssExact": false,
+  "munsell": "5.3YR 3.4/8.5",
+  "iscc": "strong brown"
+ },
+ "804040": {
+  "css": "saddlebrown",
+  "cssExact": false,
+  "munsell": "5.2R 3.5/5.8",
+  "iscc": "dark red"
+ },
+ "804060": {
+  "css": "brown",
+  "cssExact": false,
+  "munsell": "4.4RP 3.6/6.8",
+  "iscc": "grayish purplish red"
+ },
+ "804080": {
+  "css": "rebeccapurple",
+  "cssExact": false,
+  "munsell": "8.2P 3.7/9.6",
+  "iscc": "strong purple"
+ },
+ "806040": {
+  "css": "sienna",
+  "cssExact": false,
+  "munsell": "8.6YR 4.2/3.8",
+  "iscc": "moderate yellowish brown"
+ },
+ "808000": {
+  "css": "olive",
+  "cssExact": true,
+  "munsell": "0.7GY 5.1/7.9",
+  "iscc": "light olive"
+ },
+ "808040": {
+  "css": "olive",
+  "cssExact": false,
+  "munsell": "0.8GY 5.1/4.9",
+  "iscc": "light olive"
+ },
+ "808080": {
+  "css": "gray",
+  "cssExact": true,
+  "munsell": "N 5.3/",
+  "iscc": "medium gray"
+ },
+ "000000": {
+  "css": "black",
+  "cssExact": true,
+  "munsell": "N 0.0/",
+  "iscc": "black"
+ },
+ "000040": {
+  "css": "midnightblue",
+  "cssExact": false,
+  "munsell": "7.1PB 0.3/8.8",
+  "iscc": "deep purplish blue"
+ },
+ "000080": {
+  "css": "navy",
+  "cssExact": true,
+  "munsell": "6.8PB 1.3/17.3",
+  "iscc": "vivid blue"
+ },
+ "0000c0": {
+  "css": "mediumblue",
+  "cssExact": false,
+  "munsell": "6.9PB 2.4/23.8",
+  "iscc": "vivid blue"
+ },
+ "0000ff": {
+  "css": "blue",
+  "cssExact": true,
+  "munsell": "7.1PB 3.3/30.1",
+  "iscc": "vivid purplish blue"
+ },
+ "004000": {
+  "css": "darkgreen",
+  "cssExact": false,
+  "munsell": "8.1GY 2.2/7.6",
+  "iscc": "very deep yellowish green"
+ },
+ "004040": {
+  "css": "darkslategray",
+  "cssExact": false,
+  "munsell": "5.6BG 2.4/4.1",
+  "iscc": "dark bluish green"
+ },
+ "004080": {
+  "css": "darkslateblue",
+  "cssExact": false,
+  "munsell": "5.5PB 2.7/9.4",
+  "iscc": "deep blue"
+ },
+ "0040c0": {
+  "css": "mediumblue",
+  "cssExact": false,
+  "munsell": "6.9PB 3.3/17.6",
+  "iscc": "vivid blue"
+ },
+ "0040ff": {
+  "css": "blue",
+  "cssExact": false,
+  "munsell": "7.1PB 3.9/25.3",
+  "iscc": "vivid purplish blue"
+ },
+ "008000": {
+  "css": "green",
+  "cssExact": true,
+  "munsell": "9.3GY 4.5/11.3",
+  "iscc": "vivid yellowish green"
+ },
+ "008040": {
+  "css": "green",
+  "cssExact": false,
+  "munsell": "1.6G 4.6/8.8",
+  "iscc": "strong yellowish green"
+ },
+ "008080": {
+  "css": "teal",
+  "cssExact": true,
+  "munsell": "7.1BG 4.7/6.1",
+  "iscc": "moderate bluish green"
+ },
+ "0080c0": {
+  "css": "steelblue",
+  "cssExact": false,
+  "munsell": "2.4PB 5.0/10.5",
+  "iscc": "strong blue"
+ },
+ "0080ff": {
+  "css": "dodgerblue",
+  "cssExact": false,
+  "munsell": "6.3PB 5.4/17.3",
+  "iscc": "vivid blue"
+ },
+ "00c000": {
+  "css": "limegreen",
+  "cssExact": false,
+  "munsell": "9.6GY 6.7/15.4",
+  "iscc": "vivid yellowish green"
+ },
+ "00c040": {
+  "css": "limegreen",
+  "cssExact": false,
+  "munsell": "0.6G 6.7/13.7",
+  "iscc": "vivid yellowish green"
+ },
+ "00c080": {
+  "css": "mediumseagreen",
+  "cssExact": false,
+  "munsell": "4.2G 6.8/10.5",
+  "iscc": "brilliant green"
+ },
+ "00c0c0": {
+  "css": "darkturquoise",
+  "cssExact": false,
+  "munsell": "8.1BG 7.0/8.3",
+  "iscc": "brilliant bluish green"
+ },
+ "00c0ff": {
+  "css": "deepskyblue",
+  "cssExact": false,
+  "munsell": "10.0B 7.2/10.8",
+  "iscc": "brilliant blue"
+ },
+ "00ff00": {
+  "css": "lime",
+  "cssExact": true,
+  "munsell": "9.8GY 8.7/18.5",
+  "iscc": "vivid yellowish green"
+ },
+ "00ff40": {
+  "css": "lime",
+  "cssExact": false,
+  "munsell": "0.3G 8.7/17.2",
+  "iscc": "vivid yellowish green"
+ },
+ "00ff80": {
+  "css": "springgreen",
+  "cssExact": false,
+  "munsell": "2.0G 8.8/14.4",
+  "iscc": "vivid yellowish green"
+ },
+ "00ffc0": {
+  "css": "mediumspringgreen",
+  "cssExact": false,
+  "munsell": "7.0G 8.9/11.2",
+  "iscc": "vivid green"
+ },
+ "00ffff": {
+  "css": "cyan",
+  "cssExact": true,
+  "munsell": "9.1BG 9.1/9.1",
+  "iscc": "brilliant bluish green"
+ },
+ "1a1a18": {
+  "css": "midnightblue",
+  "cssExact": false,
+  "munsell": "0.6GY 0.9/0.3",
+  "iscc": "black"
+ },
+ "1b2a4a": {
+  "css": "midnightblue",
+  "cssExact": false,
+  "munsell": "5.8PB 1.7/4.8",
+  "iscc": "dark blue"
+ },
+ "2020a0": {
+  "css": "darkblue",
+  "cssExact": false,
+  "munsell": "7.2PB 2.4/17.5",
+  "iscc": "vivid purplish blue"
+ },
+ "2060a0": {
+  "css": "darkslateblue",
+  "cssExact": false,
+  "munsell": "4.9PB 3.9/9.8",
+  "iscc": "strong blue"
+ },
+ "20a020": {
+  "css": "forestgreen",
+  "cssExact": false,
+  "munsell": "9.6GY 5.6/12.4",
+  "iscc": "vivid yellowish green"
+ },
+ "20a060": {
+  "css": "mediumseagreen",
+  "cssExact": false,
+  "munsell": "2.5G 5.7/9.3",
+  "iscc": "strong yellowish green"
+ },
+ "20a0a0": {
+  "css": "cadetblue",
+  "cssExact": false,
+  "munsell": "7.7BG 5.9/6.7",
+  "iscc": "light bluish green"
+ },
+ "3a3a38": {
+  "css": "darkslategray",
+  "cssExact": false,
+  "munsell": "1.2GY 2.4/0.2",
+  "iscc": "black"
+ },
+ "3a5f8a": {
+  "css": "dimgray",
+  "cssExact": false,
+  "munsell": "4.2PB 3.9/6.6",
+  "iscc": "moderate blue"
+ },
+ "3f2a1c": {
+  "css": "darkslategray",
+  "cssExact": false,
+  "munsell": "7.2YR 1.9/2.6",
+  "iscc": "dark brown"
+ },
+ "3f4a28": {
+  "css": "darkslategray",
+  "cssExact": false,
+  "munsell": "4.9GY 2.9/3.5",
+  "iscc": "moderate olive green"
+ },
+ "4000c0": {
+  "css": "mediumblue",
+  "cssExact": false,
+  "munsell": "7.9PB 2.7/22.7",
+  "iscc": "vivid purplish blue"
+ },
+ "4000ff": {
+  "css": "blue",
+  "cssExact": false,
+  "munsell": "7.5PB 3.5/29.4",
+  "iscc": "vivid purplish blue"
+ },
+ "4040c0": {
+  "css": "darkslateblue",
+  "cssExact": false,
+  "munsell": "7.8PB 3.5/17.3",
+  "iscc": "vivid purplish blue"
+ },
+ "4040ff": {
+  "css": "blue",
+  "cssExact": false,
+  "munsell": "7.5PB 4.1/24.8",
+  "iscc": "vivid purplish blue"
+ },
+ "4080c0": {
+  "css": "steelblue",
+  "cssExact": false,
+  "munsell": "4.3PB 5.1/9.9",
+  "iscc": "strong blue"
+ },
+ "4080ff": {
+  "css": "dodgerblue",
+  "cssExact": false,
+  "munsell": "6.9PB 5.5/17.0",
+  "iscc": "vivid blue"
+ },
+ "40c000": {
+  "css": "limegreen",
+  "cssExact": false,
+  "munsell": "9.0GY 6.7/14.5",
+  "iscc": "vivid yellowish green"
+ },
+ "40c040": {
+  "css": "limegreen",
+  "cssExact": false,
+  "munsell": "10.0GY 6.8/12.7",
+  "iscc": "vivid yellowish green"
+ },
+ "40c080": {
+  "css": "mediumseagreen",
+  "cssExact": false,
+  "munsell": "3.4G 6.9/9.4",
+  "iscc": "brilliant green"
+ },
+ "40c0c0": {
+  "css": "darkturquoise",
+  "cssExact": false,
+  "munsell": "8.3BG 7.0/7.3",
+  "iscc": "brilliant bluish green"
+ },
+ "40c0ff": {
+  "css": "deepskyblue",
+  "cssExact": false,
+  "munsell": "0.8PB 7.3/10.3",
+  "iscc": "brilliant blue"
+ },
+ "40ff00": {
+  "css": "lime",
+  "cssExact": false,
+  "munsell": "9.5GY 8.8/17.7",
+  "iscc": "vivid yellowish green"
+ },
+ "40ff40": {
+  "css": "lime",
+  "cssExact": false,
+  "munsell": "10.0GY 8.8/16.5",
+  "iscc": "vivid yellowish green"
+ },
+ "40ff80": {
+  "css": "springgreen",
+  "cssExact": false,
+  "munsell": "1.7G 8.9/13.7",
+  "iscc": "vivid yellowish green"
+ },
+ "40ffc0": {
+  "css": "aquamarine",
+  "cssExact": false,
+  "munsell": "6.4G 9.0/10.5",
+  "iscc": "brilliant green"
+ },
+ "40ffff": {
+  "css": "cyan",
+  "cssExact": false,
+  "munsell": "9.2BG 9.1/8.4",
+  "iscc": "brilliant bluish green"
+ },
+ "4a6b4a": {
+  "css": "darkolivegreen",
+  "cssExact": false,
+  "munsell": "0.2G 4.1/4.0",
+  "iscc": "dark yellowish green"
+ },
+ "54534d": {
+  "css": "darkslategray",
+  "cssExact": false,
+  "munsell": "9.0Y 3.5/0.5",
+  "iscc": "olive gray"
+ },
+ "5c1f2e": {
+  "css": "maroon",
+  "cssExact": false,
+  "munsell": "3.3R 2.2/6.2",
+  "iscc": "dark red"
+ },
+ "5c6b3a": {
+  "css": "darkolivegreen",
+  "cssExact": false,
+  "munsell": "5.1GY 4.2/4.3",
+  "iscc": "moderate olive green"
+ },
+ "6020a0": {
+  "css": "rebeccapurple",
+  "cssExact": false,
+  "munsell": "1.1P 3.0/16.4",
+  "iscc": "vivid violet"
+ },
+ "6060e0": {
+  "css": "slateblue",
+  "cssExact": false,
+  "munsell": "8.5PB 4.7/17.2",
+  "iscc": "vivid purplish blue"
+ },
+ "60a020": {
+  "css": "olivedrab",
+  "cssExact": false,
+  "munsell": "7.4GY 5.8/10.3",
+  "iscc": "strong yellow green"
+ },
+ "60a0e0": {
+  "css": "cornflowerblue",
+  "cssExact": false,
+  "munsell": "4.0PB 6.3/9.8",
+  "iscc": "brilliant blue"
+ },
+ "60e060": {
+  "css": "yellowgreen",
+  "cssExact": false,
+  "munsell": "0.2G 7.9/12.6",
+  "iscc": "vivid yellowish green"
+ },
+ "60e0a0": {
+  "css": "mediumaquamarine",
+  "cssExact": false,
+  "munsell": "4.0G 8.0/9.2",
+  "iscc": "brilliant green"
+ },
+ "60e0e0": {
+  "css": "turquoise",
+  "cssExact": false,
+  "munsell": "8.9BG 8.2/7.1",
+  "iscc": "brilliant bluish green"
+ },
+ "6b4226": {
+  "css": "saddlebrown",
+  "cssExact": false,
+  "munsell": "5.6YR 3.2/4.8",
+  "iscc": "moderate brown"
+ },
+ "6b6b3a": {
+  "css": "darkolivegreen",
+  "cssExact": false,
+  "munsell": "0.7GY 4.3/3.9",
+  "iscc": "moderate olive"
+ },
+ "8000c0": {
+  "css": "darkviolet",
+  "cssExact": false,
+  "munsell": "2.3P 3.5/21.4",
+  "iscc": "vivid violet"
+ },
+ "8000ff": {
+  "css": "blueviolet",
+  "cssExact": false,
+  "munsell": "10.0PB 4.1/28.1",
+  "iscc": "vivid violet"
+ },
+ "8040c0": {
+  "css": "darkorchid",
+  "cssExact": false,
+  "munsell": "1.9P 4.1/17.2",
+  "iscc": "vivid violet"
+ },
+ "8040ff": {
+  "css": "blueviolet",
+  "cssExact": false,
+  "munsell": "9.9PB 4.6/24.3",
+  "iscc": "vivid violet"
+ },
+ "8080c0": {
+  "css": "mediumpurple",
+  "cssExact": false,
+  "munsell": "9.0PB 5.5/8.9",
+  "iscc": "light violet"
+ },
+ "8080ff": {
+  "css": "mediumslateblue",
+  "cssExact": false,
+  "munsell": "9.0PB 5.8/16.3",
+  "iscc": "vivid violet"
+ },
+ "80a0c0": {
+  "css": "cadetblue",
+  "cssExact": false,
+  "munsell": "3.1PB 6.4/5.3",
+  "iscc": "light blue"
+ },
+ "80c000": {
+  "css": "yellowgreen",
+  "cssExact": false,
+  "munsell": "6.6GY 7.0/12.3",
+  "iscc": "vivid yellow green"
+ },
+ "80c040": {
+  "css": "yellowgreen",
+  "cssExact": false,
+  "munsell": "7.4GY 7.0/10.4",
+  "iscc": "strong yellow green"
+ },
+ "80c080": {
+  "css": "darkseagreen",
+  "cssExact": false,
+  "munsell": "0.6G 7.1/6.8",
+  "iscc": "light yellowish green"
+ },
+ "80c0a0": {
+  "css": "darkseagreen",
+  "cssExact": false,
+  "munsell": "5.1G 7.2/4.9",
+  "iscc": "light green"
+ },
+ "80c0c0": {
+  "css": "mediumturquoise",
+  "cssExact": false,
+  "munsell": "8.9BG 7.3/4.2",
+  "iscc": "light bluish green"
+ },
+ "80c0ff": {
+  "css": "lightskyblue",
+  "cssExact": false,
+  "munsell": "3.9PB 7.5/9.1",
+  "iscc": "brilliant blue"
+ },
+ "80ff00": {
+  "css": "chartreuse",
+  "cssExact": false,
+  "munsell": "8.3GY 8.9/16.0",
+  "iscc": "vivid yellowish green"
+ },
+ "80ff40": {
+  "css": "chartreuse",
+  "cssExact": false,
+  "munsell": "8.8GY 9.0/14.7",
+  "iscc": "vivid yellowish green"
+ },
+ "80ff80": {
+  "css": "palegreen",
+  "cssExact": false,
+  "munsell": "0.4G 9.0/11.8",
+  "iscc": "vivid yellowish green"
+ },
+ "80ffc0": {
+  "css": "aquamarine",
+  "cssExact": false,
+  "munsell": "4.5G 9.1/8.3",
+  "iscc": "brilliant green"
+ },
+ "80ffff": {
+  "css": "cyan",
+  "cssExact": false,
+  "munsell": "9.4BG 9.3/6.6",
+  "iscc": "very light bluish green"
+ },
+ "8a7b6c": {
+  "css": "gray",
+  "cssExact": false,
+  "munsell": "9.2YR 5.2/1.7",
+  "iscc": "grayish yellowish brown"
+ },
+ "9a9a94": {
+  "css": "darkgray",
+  "cssExact": false,
+  "munsell": "1.3GY 6.2/0.4",
+  "iscc": "medium gray"
+ },
+ "a02020": {
+  "css": "brown",
+  "cssExact": false,
+  "munsell": "7.7R 3.5/11.7",
+  "iscc": "vivid red"
+ },
+ "a02060": {
+  "css": "brown",
+  "cssExact": false,
+  "munsell": "6.5RP 3.6/12.1",
+  "iscc": "strong purplish red"
+ },
+ "a020a0": {
+  "css": "darkmagenta",
+  "cssExact": false,
+  "munsell": "8.3P 3.9/16.8",
+  "iscc": "vivid purple"
+ },
+ "a06020": {
+  "css": "sienna",
+  "cssExact": false,
+  "munsell": "6.4YR 4.6/8.2",
+  "iscc": "brownish orange"
+ },
+ "a060e0": {
+  "css": "mediumpurple",
+  "cssExact": false,
+  "munsell": "2.5P 5.2/17.3",
+  "iscc": "vivid violet"
+ },
+ "a080c0": {
+  "css": "mediumpurple",
+  "cssExact": false,
+  "munsell": "3.6P 5.8/9.0",
+  "iscc": "brilliant purple"
+ },
+ "a0a020": {
+  "css": "darkgoldenrod",
+  "cssExact": false,
+  "munsell": "0.8GY 6.3/8.4",
+  "iscc": "deep greenish yellow"
+ },
+ "a0a0a0": {
+  "css": "darkgray",
+  "cssExact": false,
+  "munsell": "N 6.5/",
+  "iscc": "medium gray"
+ },
+ "a0c080": {
+  "css": "darkseagreen",
+  "cssExact": false,
+  "munsell": "7.2GY 7.3/5.3",
+  "iscc": "moderate yellow green"
+ },
+ "a0e060": {
+  "css": "lightgreen",
+  "cssExact": false,
+  "munsell": "7.5GY 8.2/10.1",
+  "iscc": "brilliant yellow green"
+ },
+ "a83232": {
+  "css": "brown",
+  "cssExact": false,
+  "munsell": "6.5R 3.9/11.0",
+  "iscc": "strong red"
+ },
+ "a97b53": {
+  "css": "darkgoldenrod",
+  "cssExact": false,
+  "munsell": "6.9YR 5.4/5.2",
+  "iscc": "light brown"
+ },
+ "a9c4de": {
+  "css": "lightsteelblue",
+  "cssExact": false,
+  "munsell": "3.0PB 7.7/4.4",
+  "iscc": "very pale blue"
+ },
+ "b3684a": {
+  "css": "indianred",
+  "cssExact": false,
+  "munsell": "1.3YR 5.1/7.3",
+  "iscc": "moderate reddish orange"
+ },
+ "b5522e": {
+  "css": "sienna",
+  "cssExact": false,
+  "munsell": "0.6YR 4.6/9.9",
+  "iscc": "moderate reddish orange"
+ },
+ "b6b69a": {
+  "css": "tan",
+  "cssExact": false,
+  "munsell": "0.9GY 7.3/1.9",
+  "iscc": "grayish yellow green"
+ },
+ "c00000": {
+  "css": "firebrick",
+  "cssExact": false,
+  "munsell": "8.4R 3.9/16.1",
+  "iscc": "vivid red"
+ },
+ "c00040": {
+  "css": "firebrick",
+  "cssExact": false,
+  "munsell": "3.2R 4.0/14.8",
+  "iscc": "vivid red"
+ },
+ "c00080": {
+  "css": "mediumvioletred",
+  "cssExact": false,
+  "munsell": "4.2RP 4.2/16.7",
+  "iscc": "vivid purplish red"
+ },
+ "c000c0": {
+  "css": "darkorchid",
+  "cssExact": false,
+  "munsell": "8.2P 4.5/21.1",
+  "iscc": "vivid purple"
+ },
+ "c000ff": {
+  "css": "darkorchid",
+  "cssExact": false,
+  "munsell": "4.1P 5.0/26.8",
+  "iscc": "vivid purple"
+ },
+ "c04000": {
+  "css": "sienna",
+  "cssExact": false,
+  "munsell": "0.4YR 4.5/13.4",
+  "iscc": "vivid reddish orange"
+ },
+ "c04040": {
+  "css": "firebrick",
+  "cssExact": false,
+  "munsell": "5.9R 4.5/11.8",
+  "iscc": "strong red"
+ },
+ "c04080": {
+  "css": "mediumvioletred",
+  "cssExact": false,
+  "munsell": "4.9RP 4.7/13.1",
+  "iscc": "vivid purplish red"
+ },
+ "c040c0": {
+  "css": "mediumorchid",
+  "cssExact": false,
+  "munsell": "8.0P 5.0/18.0",
+  "iscc": "vivid purple"
+ },
+ "c040ff": {
+  "css": "mediumorchid",
+  "cssExact": false,
+  "munsell": "3.9P 5.4/23.7",
+  "iscc": "vivid purple"
+ },
+ "c08000": {
+  "css": "darkgoldenrod",
+  "cssExact": false,
+  "munsell": "9.3YR 5.8/10.4",
+  "iscc": "deep orange yellow"
+ },
+ "c08040": {
+  "css": "peru",
+  "cssExact": false,
+  "munsell": "6.8YR 5.8/7.8",
+  "iscc": "moderate orange"
+ },
+ "c08080": {
+  "css": "rosybrown",
+  "cssExact": false,
+  "munsell": "3.5R 5.9/5.8",
+  "iscc": "dark pink"
+ },
+ "c080a0": {
+  "css": "rosybrown",
+  "cssExact": false,
+  "munsell": "3.1RP 6.0/7.3",
+  "iscc": "dark purplish pink"
+ },
+ "c080c0": {
+  "css": "orchid",
+  "cssExact": false,
+  "munsell": "7.7P 6.1/10.0",
+  "iscc": "brilliant purple"
+ },
+ "c080ff": {
+  "css": "orchid",
+  "cssExact": false,
+  "munsell": "3.1P 6.4/16.6",
+  "iscc": "vivid purple"
+ },
+ "c0a080": {
+  "css": "rosybrown",
+  "cssExact": false,
+  "munsell": "8.2YR 6.7/3.6",
+  "iscc": "light yellowish brown"
+ },
+ "c0c000": {
+  "css": "yellowgreen",
+  "cssExact": false,
+  "munsell": "0.8GY 7.5/10.6",
+  "iscc": "strong greenish yellow"
+ },
+ "c0c040": {
+  "css": "darkkhaki",
+  "cssExact": false,
+  "munsell": "0.8GY 7.5/8.6",
+  "iscc": "strong greenish yellow"
+ },
+ "c0c080": {
+  "css": "darkkhaki",
+  "cssExact": false,
+  "munsell": "0.9GY 7.6/4.5",
+  "iscc": "grayish greenish yellow"
+ },
+ "c0c0c0": {
+  "css": "silver",
+  "cssExact": true,
+  "munsell": "N 7.7/",
+  "iscc": "light gray"
+ },
+ "c0c0ff": {
+  "css": "lightsteelblue",
+  "cssExact": false,
+  "munsell": "9.5PB 7.9/7.7",
+  "iscc": "very light violet"
+ },
+ "c0ff00": {
+  "css": "greenyellow",
+  "cssExact": false,
+  "munsell": "6.1GY 9.3/14.0",
+  "iscc": "vivid yellow green"
+ },
+ "c0ff40": {
+  "css": "greenyellow",
+  "cssExact": false,
+  "munsell": "6.4GY 9.3/12.5",
+  "iscc": "vivid yellow green"
+ },
+ "c0ff80": {
+  "css": "palegreen",
+  "cssExact": false,
+  "munsell": "7.5GY 9.3/9.1",
+  "iscc": "brilliant yellow green"
+ },
+ "c0ffc0": {
+  "css": "aquamarine",
+  "cssExact": false,
+  "munsell": "0.9G 9.4/5.3",
+  "iscc": "very light yellowish green"
+ },
+ "c0ffff": {
+  "css": "lightcyan",
+  "cssExact": false,
+  "munsell": "9.6BG 9.6/3.6",
+  "iscc": "very light bluish green"
+ },
+ "c2a878": {
+  "css": "tan",
+  "cssExact": false,
+  "munsell": "2.0Y 6.9/4.2",
+  "iscc": "grayish yellow"
+ },
+ "c9c8c2": {
+  "css": "silver",
+  "cssExact": false,
+  "munsell": "8.2Y 8.0/0.4",
+  "iscc": "light gray"
+ },
+ "e06060": {
+  "css": "indianred",
+  "cssExact": false,
+  "munsell": "5.0R 5.6/11.8",
+  "iscc": "deep yellowish pink"
+ },
+ "e060a0": {
+  "css": "palevioletred",
+  "cssExact": false,
+  "munsell": "4.1RP 5.8/13.5",
+  "iscc": "deep purplish pink"
+ },
+ "e060e0": {
+  "css": "orchid",
+  "cssExact": false,
+  "munsell": "7.9P 6.1/18.3",
+  "iscc": "vivid purple"
+ },
+ "e0a060": {
+  "css": "sandybrown",
+  "cssExact": false,
+  "munsell": "6.9YR 7.0/7.6",
+  "iscc": "moderate orange"
+ },
+ "e0d3b8": {
+  "css": "lightgray",
+  "cssExact": false,
+  "munsell": "2.2Y 8.5/2.0",
+  "iscc": "yellowish gray"
+ },
+ "e0e060": {
+  "css": "khaki",
+  "cssExact": false,
+  "munsell": "0.9GY 8.7/8.4",
+  "iscc": "brilliant greenish yellow"
+ },
+ "ede7da": {
+  "css": "antiquewhite",
+  "cssExact": false,
+  "munsell": "2.5Y 9.2/0.9",
+  "iscc": "yellowish white"
+ },
+ "f5f5f0": {
+  "css": "whitesmoke",
+  "cssExact": false,
+  "munsell": "1.8GY 9.6/0.3",
+  "iscc": "white"
+ },
+ "ff0000": {
+  "css": "red",
+  "cssExact": true,
+  "munsell": "7.8R 5.2/20.4",
+  "iscc": "vivid reddish orange"
+ },
+ "ff0040": {
+  "css": "red",
+  "cssExact": false,
+  "munsell": "5.0R 5.3/19.3",
+  "iscc": "vivid red"
+ },
+ "ff0080": {
+  "css": "deeppink",
+  "cssExact": false,
+  "munsell": "8.2RP 5.4/19.5",
+  "iscc": "vivid purplish red"
+ },
+ "ff00c0": {
+  "css": "deeppink",
+  "cssExact": false,
+  "munsell": "2.4RP 5.6/22.4",
+  "iscc": "vivid reddish purple"
+ },
+ "ff00ff": {
+  "css": "magenta",
+  "cssExact": true,
+  "munsell": "8.0P 6.0/25.7",
+  "iscc": "vivid purple"
+ },
+ "ff4000": {
+  "css": "orangered",
+  "cssExact": false,
+  "munsell": "8.7R 5.6/18.2",
+  "iscc": "vivid reddish orange"
+ },
+ "ff4040": {
+  "css": "orangered",
+  "cssExact": false,
+  "munsell": "6.3R 5.6/17.1",
+  "iscc": "vivid red"
+ },
+ "ff4080": {
+  "css": "deeppink",
+  "cssExact": false,
+  "munsell": "9.1RP 5.8/17.1",
+  "iscc": "vivid purplish red"
+ },
+ "ff40c0": {
+  "css": "deeppink",
+  "cssExact": false,
+  "munsell": "2.6RP 6.0/19.7",
+  "iscc": "vivid reddish purple"
+ },
+ "ff40ff": {
+  "css": "magenta",
+  "cssExact": false,
+  "munsell": "7.9P 6.3/23.6",
+  "iscc": "vivid purple"
+ },
+ "ff8000": {
+  "css": "darkorange",
+  "cssExact": false,
+  "munsell": "3.1YR 6.6/14.8",
+  "iscc": "vivid orange"
+ },
+ "ff8040": {
+  "css": "coral",
+  "cssExact": false,
+  "munsell": "1.2YR 6.6/12.8",
+  "iscc": "vivid yellowish pink"
+ },
+ "ff8080": {
+  "css": "salmon",
+  "cssExact": false,
+  "munsell": "4.3R 6.7/11.4",
+  "iscc": "vivid yellowish pink"
+ },
+ "ff80c0": {
+  "css": "hotpink",
+  "cssExact": false,
+  "munsell": "3.6RP 6.9/13.4",
+  "iscc": "strong purplish pink"
+ },
+ "ff80ff": {
+  "css": "violet",
+  "cssExact": false,
+  "munsell": "7.7P 7.2/17.7",
+  "iscc": "vivid purple"
+ },
+ "ffc000": {
+  "css": "gold",
+  "cssExact": false,
+  "munsell": "1.7Y 8.1/12.6",
+  "iscc": "vivid yellow"
+ },
+ "ffc040": {
+  "css": "orange",
+  "cssExact": false,
+  "munsell": "0.7Y 8.1/10.8",
+  "iscc": "brilliant orange yellow"
+ },
+ "ffc080": {
+  "css": "burlywood",
+  "cssExact": false,
+  "munsell": "7.0YR 8.2/7.1",
+  "iscc": "light orange yellow"
+ },
+ "ffc0c0": {
+  "css": "pink",
+  "cssExact": false,
+  "munsell": "2.6R 8.3/5.5",
+  "iscc": "light pink"
+ },
+ "ffc0ff": {
+  "css": "pink",
+  "cssExact": false,
+  "munsell": "7.5P 8.5/8.8",
+  "iscc": "very light purple"
+ },
+ "ffff00": {
+  "css": "yellow",
+  "cssExact": true,
+  "munsell": "0.8GY 9.7/12.9",
+  "iscc": "vivid greenish yellow"
+ },
+ "ffff40": {
+  "css": "yellow",
+  "cssExact": false,
+  "munsell": "0.8GY 9.7/11.5",
+  "iscc": "vivid greenish yellow"
+ },
+ "ffff80": {
+  "css": "yellow",
+  "cssExact": false,
+  "munsell": "0.9GY 9.8/7.9",
+  "iscc": "light greenish yellow"
+ },
+ "ffffc0": {
+  "css": "lemonchiffon",
+  "cssExact": false,
+  "munsell": "1.2GY 9.9/3.7",
+  "iscc": "pale greenish yellow"
+ },
+ "ffffff": {
+  "css": "white",
+  "cssExact": true,
+  "munsell": "N 10.0/",
+  "iscc": "white"
+ }
+}

@@ -1,0 +1,15 @@
+<nav class="gloss-cloud" aria-label="Glossary terms">
+{%- for g in colourGlossary %}
+<a href="#{{ g.id }}">{{ g.term | safe }}</a>
+{%- endfor %}
+</nav>
+{%- for section, terms in colourGlossary | groupby("section") %}
+
+### {{ section }}
+
+<dl class="gloss">
+{%- for g in terms %}
+<dt id="{{ g.id }}">{{ g.term | safe }}</dt><dd>{{ g.def | safe }}{% for s in g.see %}{{ " " if loop.first else (s.sep or ", ") }}<a class="gloss-see" href="{{ s.href }}">{{ "see " if loop.first }}{{ s.text | safe }}</a>{% endfor %}</dd>
+{%- endfor %}
+</dl>
+{%- endfor %}

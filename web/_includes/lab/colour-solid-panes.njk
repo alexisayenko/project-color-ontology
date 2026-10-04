@@ -1,0 +1,150 @@
+{%- macro check(p, key, text, checked) -%}
+<label class="cube-check"><input type="checkbox" id="{{ p }}-{{ key }}" data-persist="{{ key }}"{{ " checked" if checked }}> {{ text }}</label>
+{%- endmacro -%}
+
+{%- macro radioSeg(p, group, options, aria) -%}
+<div class="cube-seg" role="radiogroup" {{ aria | safe }}>
+{%- for o in options -%}
+<label><input type="radio" name="{{ p }}-{{ group }}" id="{{ p }}-{{ group }}-{{ o.id }}" data-persist="{{ group }}-{{ o.id }}"{{ " checked" if o.checked }}> {{ o.text }}</label>
+{%- endfor -%}
+</div>
+{%- endmacro -%}
+
+{%- macro viewSwitch(c) -%}
+<div class="solid-switch" role="group" aria-label="Colour model">
+{%- for v in c.views %}
+<button type="button" data-view="{{ v.id }}" aria-pressed="{{ 'true' if v.id == c.view else 'false' }}">{{ v.text }}</button>
+{%- endfor %}
+</div>
+{%- endmacro -%}
+
+{%- macro stage(c) -%}
+{%- set p = c.prefix -%}
+<div class="{{ c.stageClass }}" id="{{ p }}-stage" role="img" aria-label="{{ c.stageLabel }}">
+{%- if c.help %}
+<div class="cube-help" aria-hidden="true">Drag · Scroll to zoom</div>
+{%- endif %}
+<div class="cube-tip" id="{{ p }}-tip" hidden><span class="cube-tip-sw" id="{{ p }}-tip-sw"></span><span><span class="cube-tip-hex" id="{{ p }}-tip-hex"></span><small id="{{ p }}-tip-rgb"></small></span></div>
+</div>
+{%- endmacro -%}
+
+{%- macro groups(p) -%}
+<p class="cube-subcap" id="{{ p }}-groups-l">Highlight</p><div class="cube-groups" id="{{ p }}-groups" role="group" aria-labelledby="{{ p }}-groups-l"></div>
+{%- endmacro -%}
+
+{%- macro latticeCard(c) -%}
+{%- set p = c.prefix -%}
+<div class="cube-panel cube-lattice cube-card">
+<p class="cube-cap">Lattice</p>
+{{ radioSeg(p, "lat", c.lattice, 'aria-label="Lattice points"') }}
+<p class="cube-subcap" id="{{ p }}-click-l">On click</p>
+{{ radioSeg(p, "click", c.onClick, 'aria-labelledby="' + p + '-click-l"') }}{{ groups(p) }}
+</div>
+{%- endmacro -%}
+
+{%- macro ringsCard(c) -%}
+<div class="cube-panel cube-lattice cube-card">
+<p class="cube-cap">Rings</p>
+{{ groups(c.prefix) }}
+</div>
+{%- endmacro -%}
+
+{%- macro labelModes(c) -%}
+{%- set p = c.prefix -%}
+<p class="cube-subcap" id="{{ p }}-lbl-l">Colour names</p>
+{{ radioSeg(p, "lbl", c.labelModes, 'aria-labelledby="' + p + '-lbl-l"') }}
+{%- endmacro -%}
+
+{%- macro samplesCard(c) -%}
+{%- set p = c.prefix -%}
+<div class="cube-card">
+<p class="cube-cap">Gamut samples</p>
+{{ check(p, c.showSamples, "Show samples", true) }}
+{%- for s in c.sliders %}
+<label class="cube-ctl" for="{{ p }}-{{ s.id }}"><span>{{ s.text }} <output id="{{ p }}-{{ s.id }}-v"></output></span><input type="range" id="{{ p }}-{{ s.id }}" data-persist="{{ s.id }}" min="{{ s.min }}" max="{{ s.max }}" step="{{ s.step }}" value="{{ s.value }}"></label>
+{%- endfor %}
+</div>
+{%- endmacro -%}
+
+{%- macro cutCard(c) -%}
+{%- set p = c.prefix -%}
+<div class="cube-card">
+<p class="cube-cap">Cut away</p>
+{%- for a in c.axes %}
+<div class="cube-ctl {{ p }}-{{ a.cls }}" role="group" aria-labelledby="{{ p }}-{{ a.id }}-l"><span><span id="{{ p }}-{{ a.id }}-l">{{ a.text }}</span> <output id="{{ p }}-{{ a.id }}-v"></output></span><div class="cube-range"><input type="range" id="{{ p }}-{{ a.id }}-lo" data-persist="{{ a.id }}-lo" min="{{ a.min }}" max="{{ a.max }}" step="{{ a.step }}" value="{{ a.min }}" aria-label="{{ a.text }} from"><input type="range" id="{{ p }}-{{ a.id }}-hi" data-persist="{{ a.id }}-hi" min="{{ a.min }}" max="{{ a.max }}" step="{{ a.step }}" value="{{ a.max }}" aria-label="{{ a.text }} to"></div></div>
+{%- endfor %}
+<div class="cube-buttons">
+<button type="button" id="{{ p }}-cut-all">Select all</button>
+<button type="button" id="{{ p }}-cut-none">Select none</button>
+</div>
+</div>
+{%- endmacro -%}
+
+{%- macro palettesCard(c) -%}
+{%- set p = c.prefix -%}
+<div class="cube-card">
+<p class="cube-cap"{% if c.palettesAnchor %} id="{{ p }}-palettes"{% endif %}>Palettes</p>
+{%- for o in c.palettes %}
+{{ check(p, o.id, o.text) }}
+{%- endfor %}
+</div>
+{%- endmacro -%}
+
+{%- macro viewCard(c) -%}
+{%- set p = c.prefix -%}
+<div class="cube-card">
+<p class="cube-cap">View</p>
+{%- for o in c.viewChecks %}
+{{ check(p, o.id, o.text, o.checked) }}
+{%- endfor %}
+{{ labelModes(c) }}
+{%- if c.viewButtons %}
+<div class="cube-buttons">
+{%- for b in c.viewButtons %}
+<button type="button" id="{{ p }}-{{ b.id }}">{{ b.text }}</button>
+{%- endfor %}
+</div>
+{%- endif %}
+</div>
+{%- endmacro -%}
+
+{%- macro huesCard(c) -%}
+<div class="cube-card">
+<p class="cube-cap">Hues</p>
+<ul class="wheel-key">
+{%- for h in c.hues %}
+<li><svg viewBox="-13 -13 26 26" aria-hidden="true">{% if h.halo %}<circle class="wheel-halo" r="11.5"/>{% endif %}<circle class="wheel-dot {{ h.cls }}" r="{{ h.r }}" fill="{{ h.fill }}"/></svg><span>{{ h.text }} <small>{{ h.members }}</small></span></li>
+{%- endfor %}
+</ul>
+</div>
+{%- endmacro -%}
+
+{%- macro solidPane(c) -%}
+<div class="cube-lab" data-view="{{ c.view }}"{{ " hidden" if c.hidden }}>
+<div class="cube-view">
+{{ viewSwitch(c) }}
+{{ stage(c) }}
+{{ latticeCard(c) }}
+</div>
+<div class="cube-panel">
+{{ samplesCard(c) }}
+{{ cutCard(c) }}
+{{ palettesCard(c) }}
+{{ viewCard(c) }}
+</div>
+</div>
+{%- endmacro -%}
+
+{%- macro wheelPane(c) -%}
+<div class="cube-lab" data-view="{{ c.view }}"{{ " hidden" if c.hidden }}>
+<div class="cube-view">
+{{ viewSwitch(c) }}
+{{ stage(c) }}
+{{ ringsCard(c) }}
+</div>
+<div class="cube-panel">
+{{ huesCard(c) }}
+{{ viewCard(c) }}
+</div>
+</div>
+{%- endmacro -%}

@@ -1,0 +1,453 @@
+- id: g-colour
+  term: colour
+  section: Perception
+  def: "Not a property of light but the eye's response to it: three cone signals, read by the brain in context."
+- id: g-retina
+  term: retina
+  section: Perception
+  def: The light-sensitive layer at the back of the eye, where photoreceptors turn light into nerve signals.
+- id: g-rods-and-cones
+  term: rods and cones
+  section: Perception
+  def: The two photoreceptor types. Cones work in bright light and carry colour; rods work in dim light and carry none. In daylight the rods are saturated and contribute nothing to colour vision.
+- id: g-rhodopsin
+  term: rhodopsin
+  section: Perception
+  def: The pigment of the rods, and only the rods, peaking near 500 nm and bleached by daylight.
+- id: g-photopsins
+  term: photopsins (cone opsins)
+  section: Perception
+  def: The three cone pigments, S, M and L, peaking near 420, 530 and 560 nm. The cones do not use rhodopsin.
+- id: g-photopic-scotopic-mesopic
+  term: photopic, scotopic and mesopic vision
+  section: Perception
+  def: Daylight vision, cone-only and in colour; night vision, rod-only and effectively colourless; and the twilight range between, where both are working.
+- id: g-purkinje-shift
+  term: Purkinje shift
+  section: Perception
+  def: As light dims, peak sensitivity moves towards the blue end, so reds darken faster than blues at dusk.
+- id: g-trichromacy
+  term: trichromacy
+  section: Perception
+  def: Three kinds of cone, so three numbers are enough to specify any colour a person can see.
+  see:
+    - href: "#is-that-every-colour-there-is"
+      text: Is that every colour there is?
+- id: g-cone-response
+  term: cone response
+  section: Perception
+  def: How strongly each cone type is excited by a given light. Those three values are all the eye passes on.
+- id: g-spectrum
+  term: spectrum
+  section: Perception
+  def: Light sorted by wavelength. A single wavelength is a spectral, or monochromatic, colour.
+- id: g-wavelength-and-frequency
+  term: wavelength and frequency
+  section: Perception
+  def: "Two accounts of the same wave, inversely related through the speed of light (λ = c / f): shorter wavelength, higher frequency."
+- id: g-visible-range
+  term: visible range
+  section: Perception
+  def: Roughly 380 to 700 nm, violet to red. The ends fade out rather than stop.
+- id: g-spectral-power-distribution
+  term: spectral power distribution
+  section: Perception
+  def: "How much power a light carries at each wavelength: the full physical description, far more detail than the eye keeps."
+  see:
+    - href: "#is-that-every-colour-there-is"
+      text: Is that every colour there is?
+- id: g-metamerism
+  term: metamerism
+  section: Perception
+  def: Two different spectral power distributions that give the same cone response, and so look identical.
+  see:
+    - href: "#is-that-every-colour-there-is"
+      text: Is that every colour there is?
+- id: g-hue
+  term: hue
+  section: Perception
+  def: "Which colour it is, as an angle round the circle: red, yellow, green, blue and the way between."
+  see:
+    - href: "#srgb-in-oklch"
+      text: sRGB in OKLCH
+- id: g-lightness
+  term: lightness
+  section: Perception
+  def: How light a colour looks relative to white. Perceptual, not the measured luminance it is computed from.
+  see:
+    - href: "#srgb-in-oklch"
+      text: sRGB in OKLCH
+- id: g-value
+  term: value
+  section: Perception
+  def: Munsell's name for lightness, on a 0–10 scale of its own. The same attribute as CIELAB's L*, not the same number.
+- id: g-brightness
+  term: brightness
+  section: Perception
+  def: How much light a colour appears to emit, judged on its own. Lightness is that judgement made relative to a white.
+- id: g-colourfulness
+  term: colourfulness
+  section: Perception
+  def: The absolute amount of hue seen in a stimulus. It rises with the light, so the same surface is more colourful in sun than in shade. Chroma and saturation are this quantity judged against something else.
+- id: g-chroma
+  term: chroma
+  section: Perception
+  def: "Colourfulness relative to the brightness of a similarly lit white: the illumination discounted, so a surface keeps its chroma as the light changes. Equivalently, how far it stands from the grey of the same lightness."
+  see:
+    - href: "#srgb-in-oklch"
+      text: sRGB in OKLCH
+- id: g-saturation
+  term: saturation
+  section: Perception
+  def: Colourfulness relative to the stimulus's own brightness. Everyday speech uses the word for all three; the difference shows in shadow, where chroma falls but saturation holds.
+- id: g-editor-sliders
+  term: editor sliders
+  section: Perception
+  def: "The Hue, Saturation, Lightness, Brightness and Contrast controls in photo and design software are implementation-specific transforms, usually run in HSL or HSV over gamma-encoded values. They are not the quantities defined above: a saturation slider moves chroma by no stated amount, and editor brightness is seldom perceptual lightness."
+- id: g-contrast
+  term: contrast
+  section: Perception
+  def: "The difference in lightness or colour that makes two areas tell apart. The WCAG ratio used for the web is narrower: computed from relative luminance alone, so it ignores hue — two colours of equal luminance can be illegible together and red on green can pass and still fail many readers."
+- id: g-colour-constancy
+  term: colour constancy
+  section: Perception
+  def: A surface keeps its apparent colour as the light falling on it changes.
+- id: g-simultaneous-contrast
+  term: simultaneous contrast
+  section: Perception
+  def: A colour shifts in appearance according to what surrounds it.
+- id: g-chromatic-adaptation
+  term: chromatic adaptation
+  section: Perception
+  def: "The visual system rescaling its cone responses to the prevailing light: the mechanism behind colour constancy."
+- id: g-standard-observer
+  term: standard observer
+  section: Perception
+  def: The CIE's averaged colour-matching functions, 2° (1931) and 10° (1964), standing in for a human eye.
+- id: g-illuminant
+  term: illuminant
+  section: Perception
+  def: A specified spectral power distribution for a light source, such as D65, daylight near 6500 K.
+- id: g-white-point
+  term: white point
+  section: Perception
+  def: The chromaticity counted as white in a given space or lighting. sRGB and Display P3 both use D65.
+- id: g-colorimetry
+  term: colorimetry
+  section: Colorimetry
+  def: Measuring colour as the eye would match it, rather than measuring the light itself.
+- id: g-cie-1931
+  term: CIE 1931
+  section: Colorimetry
+  def: "The founding standard: colour-matching functions for the 2° observer, and the XYZ space built on them."
+- id: g-xyz
+  term: XYZ
+  section: Colorimetry
+  def: The CIE's reference tristimulus space, in which every other colour space is defined. Y carries luminance.
+- id: g-chromaticity-diagram
+  term: chromaticity diagram
+  section: Colorimetry
+  def: "Chromaticity — what is left of a colour once luminance is divided out — plotted as the x and y of xyY: the horseshoe of spectral colours, closed by the line of purples."
+- id: g-gamut
+  term: gamut
+  section: Colorimetry
+  def: "The set of colours a device or colour space can produce: a solid, not an area. sRGB's gamut is the cube, which the OKLCH view shows as the lumpy solid; a colour outside it cannot be shown and gets clipped."
+  see:
+    - href: "#srgb-in-oklch"
+      text: the OKLCH view
+    - href: "#is-that-every-colour-there-is"
+      text: Is that every colour there is?
+- id: g-macadam-limits
+  term: MacAdam limits
+  section: Colorimetry
+  def: "The boundary of the optimal colour solid: the most saturated colours a reflecting surface can have under a given illuminant."
+- id: g-colour-difference
+  term: colour difference
+  section: Colorimetry
+  def: How far apart two colours are to the eye, which is not their distance in a device space.
+- id: g-delta-e
+  term: delta E (ΔE)
+  section: Colorimetry
+  def: A number for that difference. ΔE*ab is plain Euclidean distance in CIELAB; about 1 is the smallest difference most people notice.
+- id: g-ciede2000
+  term: CIEDE2000
+  section: Colorimetry
+  def: "The current formula (CIE 142-2001): CIELAB distance corrected for lightness, chroma and hue, with a rotation term for the blues."
+- id: g-colour-model
+  term: colour model
+  section: Spaces and encoding
+  def: "The coordinates alone: three axes and what they mean, as in RGB, HSL or LCH."
+- id: g-colour-space
+  term: colour space
+  section: Spaces and encoding
+  def: A model tied to real colours by primaries, white point and transfer function. sRGB and Display P3 share a model but are different spaces.
+- id: g-colour-solid
+  term: colour solid
+  section: Spaces and encoding
+  def: A colour space drawn in all three of its dimensions. A colour wheel shows one (hue); a wheel with lightness shows two, a slice; the solid shows hue, lightness and chroma at once — which is why the Munsell solid is lopsided, maximum chroma differing by hue and by lightness, where a wheel implies every hue is equally available everywhere.
+  see:
+    - href: "#cube-stage"
+      text: the diagram
+- id: g-srgb
+  term: sRGB
+  section: Spaces and encoding
+  def: "The default screen space since 1996: three fixed primaries, D65 white, eight bits a channel, about 16.7 million colours."
+  see:
+    - href: "#the-rgb-cube"
+      text: The RGB cube
+- id: g-display-p3
+  term: Display P3
+  section: Spaces and encoding
+  def: "DCI-P3's primaries with sRGB's white point and transfer function: roughly a quarter more colours than sRGB."
+  see:
+    - href: "#is-that-every-colour-there-is"
+      text: Is that every colour there is?
+- id: g-rec-2020
+  term: Rec. 2020
+  section: Spaces and encoding
+  def: ITU-R BT.2020, the ultra-high-definition space. Its primaries are monochromatic, so no display covers it in full.
+  see:
+    - href: "#is-that-every-colour-there-is"
+      text: Is that every colour there is?
+- id: g-cielab
+  term: CIELAB
+  section: Spaces and encoding
+  def: "CIE 1976 L*a*b*: lightness with two opponent axes, a* green–red and b* blue–yellow. Near-uniform, weakest in the blues."
+- id: g-oklab
+  term: Oklab
+  section: Spaces and encoding
+  def: "Björn Ottosson, 2020: the same opponent idea fitted to better data, so equal steps look more nearly equal."
+  see:
+    - href: "#srgb-in-oklch"
+      text: sRGB in OKLCH
+- id: g-oklch
+  term: OKLCH
+  section: Spaces and encoding
+  def: Oklab in cylindrical form — lightness, chroma, hue angle. The same colours, in coordinates one can reason about.
+  see:
+    - href: "#srgb-in-oklch"
+      text: sRGB in OKLCH
+- id: g-hsl
+  term: HSL
+  section: Spaces and encoding
+  def: The RGB cube reshaped into a cylinder. Convenient, but its lightness and saturation are arithmetic, not perceptual.
+  see:
+    - href: "#srgb-in-oklch"
+      text: sRGB in OKLCH
+- id: g-hsv
+  term: HSV
+  section: Spaces and encoding
+  def: The same reshaping into a cone. V is just the largest channel, so full-V yellow and full-V blue are nothing alike in brightness.
+- id: g-hwb
+  term: HWB
+  section: Spaces and encoding
+  def: Hue plus whiteness and blackness, the way a painter lets down a pigment. Alvy Ray Smith, 1996; a restatement of HSV.
+- id: g-gamma
+  term: gamma
+  section: Spaces and encoding
+  def: The non-linear relation between stored numbers and emitted light, which puts the limited bits where the eye needs them.
+- id: g-transfer-function
+  term: transfer function
+  section: Spaces and encoding
+  def: "The exact curve doing that. sRGB's is piecewise: a short linear foot, then a 2.4 power, approximating gamma 2.2."
+- id: g-out-of-gamut-clipping
+  term: out-of-gamut clipping
+  section: Spaces and encoding
+  def: "What becomes of a colour the device cannot show: clipped channel by channel, which shifts the hue, or mapped deliberately to keep it."
+- id: g-colour-order-system
+  term: colour order system
+  section: Order and naming
+  def: "An ordered set of physical samples with a notation for every position, such as Munsell or NCS: it says where a colour sits among the others."
+- id: g-colour-naming-system
+  term: colour naming system
+  section: Order and naming
+  def: A way of putting a name to a colour, such as ISCC–NBS or CNS. Naming is not ordering, and a notation is not a name.
+- id: g-munsell
+  term: Munsell
+  section: Order and naming
+  def: "Albert Munsell, from 1905: hue, value and chroma in perceptually spaced steps, written <code>7.8R 5.2/20.4</code>, neutrals <code>N 5.3/</code>."
+  see:
+    - href: "#cube-lbl-munsell"
+      text: the Munsell labels
+- id: g-ncs
+  term: NCS
+  section: Order and naming
+  def: "The Natural Colour System, Swedish: how far a colour resembles each of six elementary colours, in percentages of blackness and chromaticness. Judged by eye, not instrument."
+- id: g-iscc-nbs
+  term: ISCC–NBS
+  section: Order and naming
+  def: "The Inter-Society Color Council and National Bureau of Standards partition of Munsell space into 267 named blocks, each with a centroid colour: systematic English, <em>light greenish yellow</em> and the like."
+  see:
+    - href: "#cube-lbl-iscc"
+      text: the ISCC–NBS labels
+- id: g-cns
+  term: CNS
+  section: Order and naming
+  def: "Color Naming System, Berk, Brownston and Kaufman, 1982: a small grammar of hue, lightness and saturation words yielding 627 names, built for computers to parse."
+- id: g-pantone
+  term: Pantone
+  section: Order and naming
+  def: A proprietary catalogue of mixed inks matched to printed swatches. A stock of references, not a colour space.
+- id: g-ral
+  term: RAL
+  section: Order and naming
+  def: The German coatings standard; RAL Classic's four-digit numbers name a fixed set of paint colours.
+- id: g-basic-colour-terms
+  term: basic colour terms
+  section: Order and naming
+  def: "Berlin and Kay, 1969: the few words a language uses for colour with no qualifier — eleven in English — and the order in which languages acquire them."
+- id: g-colour-families
+  term: colour families
+  section: Order and naming
+  def: Coarse named groups a palette is sorted into, as in the capsule wardrobe's sixteen. A working vocabulary, not a standard.
+  see:
+    - href: "#the-capsule-wardrobe-palette-inside-the-cube"
+      text: the capsule palette
+- id: g-colour-names
+  term: colour names
+  section: Order and naming
+  def: "Ordinary words: CSS keywords, paint-chart invention, folk usage. Convenient, unstable, rarely exact."
+  see:
+    - href: "#cube-lbl-css"
+      text: the CSS labels
+- id: g-palette
+  term: palette
+  section: Order and naming
+  def: A chosen, finite set of colours used together, like the capsule wardrobe's sixteen colour families; a colour field can be generated from one.
+  see:
+    - href: "#cube-palettes"
+      text: Palettes
+- id: g-colour-field
+  term: colour field
+  section: Order and naming
+  def: A continuous spread of colours generated from a few anchor colours by blending between them, like the moene grid's 81 cells from nine region colours.
+  see:
+    - href: "#cube-field"
+      text: the moene grid palette
+- id: g-additive-mixing
+  term: additive mixing
+  section: Mixing and theory
+  def: "Lights added together: red and green make yellow, all three make white. What a screen does."
+- id: g-subtractive-mixing
+  term: subtractive mixing
+  section: Mixing and theory
+  def: Pigments and filters each removing part of the spectrum; what is left is the colour. What paint and ink do.
+- id: g-ryb
+  term: RYB
+  section: Mixing and theory
+  def: "The painter's red, yellow and blue primaries. Traditional and approximate: it mixes a narrower range than CMY."
+- id: g-cmyk
+  term: CMYK
+  section: Mixing and theory
+  def: "Cyan, magenta and yellow inks, with black added for depth and text: printing's subtractive set."
+- id: g-kubelka-munk
+  term: Kubelka–Munk
+  section: Mixing and theory
+  def: The 1931 two-flux theory of absorption and scattering in a paint film, still the basis of computer matching for pigments.
+- id: g-colour-wheel
+  term: colour wheel
+  section: Mixing and theory
+  def: "Hue bent into a circle. Which colours fall opposite depends on the wheel: RYB sets red against green, additive mixing against cyan."
+  see:
+    - href: "#the-hue-wheel"
+      text: The hue wheel
+- id: g-colour-triangle
+  term: colour triangle
+  section: Mixing and theory
+  def: "Two different figures. The Maxwell, or chromaticity, triangle puts three primaries at the vertices and everything mixable from them inside: sRGB's triangle on the xy diagram is one. The hue–black–white triangle takes a single hue with black and white as its other vertices — its two edges are the tints and the shades, its interior the tones."
+  see:
+    - href: "#cube-g-tint"
+      text: the Tint
+    - href: "#cube-g-shade"
+      text: Shade
+    - href: "#cube-g-tone"
+      text: Tone columns
+      sep: " and "
+- id: g-colour-theory
+  term: colour theory
+  section: Mixing and theory
+  def: The practical rules of harmony and contrast built on the wheel. Craft and convention, not colorimetry.
+- id: g-primary-colours
+  term: primary colours
+  section: Mixing and theory
+  def: "The set a system mixes from. There is no natural set: RGB for light, CMY for ink, RYB by tradition."
+  see:
+    - href: "#cube-g-primaries"
+      text: the Primaries row
+- id: g-secondary-colours
+  term: secondary colours
+  section: Mixing and theory
+  def: "Two primaries in equal part: cyan, magenta and yellow in light; orange, green and violet in RYB."
+  see:
+    - href: "#cube-g-secondaries"
+      text: the Secondaries row
+- id: g-tertiary-colours
+  term: tertiary colours
+  section: Mixing and theory
+  def: A primary mixed with the secondary beside it; six of them, between the named points of the wheel.
+  see:
+    - href: "#cube-g-tertiaries"
+      text: the Tertiaries row
+- id: g-complementary-colours
+  term: complementary colours
+  section: Mixing and theory
+  def: Opposite on the wheel. Mixed, they cancel to grey or white; side by side, each makes the other look stronger.
+- id: g-analogous
+  term: analogous
+  section: Mixing and theory
+  def: "Neighbours on the wheel: a quiet scheme with little contrast."
+- id: g-split-complementary
+  term: split complementary
+  section: Mixing and theory
+  def: A colour with the two neighbours of its complement, keeping the contrast but blunting it.
+- id: g-triadic
+  term: triadic
+  section: Mixing and theory
+  def: Three hues evenly spaced round the wheel.
+- id: g-tetradic
+  term: tetradic
+  section: Mixing and theory
+  def: "Four, as two complementary pairs: square when evenly spaced, rectangular when not."
+- id: g-warm-and-cool-colours
+  term: warm and cool colours
+  section: Mixing and theory
+  def: "The reds and yellows against the blues and greens. A convention of appearance, and the reverse of the physics: cool colours have the higher colour temperature."
+- id: g-colour-temperature
+  term: colour temperature
+  section: Mixing and theory
+  def: The temperature in kelvin of a black body whose light matches a source. Low is orange, high is blue — hence the clash with warm and cool.
+- id: g-pure-hue
+  term: pure hue
+  section: Mixing and theory
+  def: "On this page, a colour at the cube's full reach, one channel at 0 and one at 255: the twelve such lattice points make the ring."
+  see:
+    - href: "#cube-g-pure"
+      text: the Pure hue column
+- id: g-tint
+  term: tint
+  section: Mixing and theory
+  def: A hue mixed with white.
+  see:
+    - href: "#cube-g-tint"
+      text: the Tint column
+- id: g-shade
+  term: shade
+  section: Mixing and theory
+  def: A hue mixed with black.
+  see:
+    - href: "#cube-g-shade"
+      text: the Shade column
+- id: g-tone
+  term: tone
+  section: Mixing and theory
+  def: "A hue mixed with grey: neither as light as a tint nor as dark as a shade."
+  see:
+    - href: "#cube-g-tone"
+      text: the Tone column
+- id: g-neutral
+  term: neutral
+  section: Mixing and theory
+  def: "Black, white and the greys between: no hue, no chroma."
+  see:
+    - href: "#cube-g-neutrals"
+      text: the Neutrals toggle
