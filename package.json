@@ -7,18 +7,25 @@
     "node": ">=22.9.0"
   },
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
+    "start": "npm run build:learn && eleventy --serve",
+    "build": "npm run build:learn && eleventy",
+    "build:learn": "vite build --config apps/learn/vite.config.ts",
     "names": "node scripts/build-colour-names.mjs",
     "deploy": "npm run build && wrangler deploy",
     "test": "node --test \"test/*.mjs\""
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
     "markdown-it": "^14.2.0",
     "markdown-it-anchor": "^9.2.0",
     "munsell": "^1.1.7",
     "playwright": "^1.61.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.2",
     "wrangler": "^4.88.0"
   },
   "dependencies": {

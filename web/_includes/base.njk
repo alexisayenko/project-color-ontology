@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/style.css?v={{ buildId }}" />
+    {%- if app %}
+    <link rel="stylesheet" href="/assets/learn/learn.css?v={{ buildId }}" />
+    {%- endif %}
     {%- for s in styles %}
     <link rel="stylesheet" href="/assets/{{ s }}?v={{ buildId }}" />
     {%- endfor %}
@@ -19,13 +22,25 @@
       <nav class="nav">
         <a href="/">Colour solid</a>
         <a href="/grid-colour-field/">Grid colour field</a>
+        <a href="/color-theory/">Science of colour</a>
+        <a href="/colors/">Colors</a>
+        <a href="/color-palettes/">Color palettes</a>
+        <a href="/color-gradient/">Color gradient</a>
+        <a href="/scratchpad/">Scratchpad</a>
         <a href="https://isayenko.net">Alex Isayenko</a>
         <a href="https://github.com/alexisayenko/project-color-ontology">GitHub</a>
       </nav>
     </header>
+    {%- if app %}
+    <div class="learn-main">
+      <div data-app="{{ app }}"></div>
+    </div>
+    <script type="module" src="/assets/learn/learn.js?v={{ buildId }}"></script>
+    {%- else %}
     <main>
       {{ content | safe }}
     </main>
+    {%- endif %}
     <footer>
       <div>© {{ year }} Alex Isayenko</div>
     </footer>

@@ -15,7 +15,7 @@ A personal, public, interactive study of colour ordering. Visitors turn and slic
 
 ## Tech stack
 
-Eleventy 3 static site (markdown + Nunjucks), plain CSS, native ES modules, vendored Three.js. Deployed to Cloudflare Workers Static Assets at color.isayenko.net (`wrangler.toml`, `custom_domain = true`; `npm run deploy`, needs Node >= 22.9 and a Cloudflare token). No CI yet.
+Eleventy 3 static site (markdown + Nunjucks), plain CSS, native ES modules, vendored Three.js. The learning pages (`/color-theory/`, `/colors/`, `/color-palettes/`, `/color-gradient/`, `/scratchpad/`) are React 19 + Tailwind 4 islands from `apps/learn/`, built by Vite into the gitignored `web/assets/learn/` (`npm run build:learn`, run by `build`/`deploy`); images over ~300 KB in `web/assets/theory/` are gitignored and staged for the private `data-storage-lfs` repo (`/data/alex/staging-lfs/color-ontology/`) — a fresh clone will not build with them until the LFS fetch is wired. Deployed to Cloudflare Workers Static Assets at color.isayenko.net (`wrangler.toml`, `custom_domain = true`; `npm run deploy`, needs Node >= 22.9 and a Cloudflare token). No CI yet.
 
 ## Repo
 

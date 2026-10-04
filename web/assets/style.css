@@ -160,3 +160,8 @@ main ul { display: flow-root; }
 .panel:hover { border-color: var(--accent); }
 
 .hint { margin: 6px 0 0; font-size: 0.82rem; color: var(--muted); }
+
+.learn-main { flex: 1; display: flex; flex-direction: column; }
+.learn-main > [data-app] { flex: 1; display: flex; flex-direction: column; margin: 0 -50px; }
+.learn-main > [data-app] > div { background: transparent; }
+@media (max-width: 980px) { .learn-main > [data-app] { margin: 0 -40px; } }

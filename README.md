@@ -9,12 +9,12 @@ Ways of ordering screen colour: the RGB cube, OKLCH and the hue wheel as views o
 
 ## Stack
 
-Eleventy 3 (Nunjucks + markdown), plain CSS, native ES modules with no bundler, Three.js r128 vendored. Hosted on Cloudflare Workers Static Assets (`color-ontology` worker, route `color.isayenko.net`). Needs Node >= 22.9.
+Eleventy 3 (Nunjucks + markdown), plain CSS, native ES modules with no bundler, Three.js r128 vendored. The learning pages (colour theory, colors, palettes, gradient, scratchpad) are React + Tailwind islands in `apps/learn/`, bundled by Vite into `web/assets/learn/` (generated, gitignored). Heavy images (> 300 KB) in `web/assets/theory/` are gitignored and kept in the private `data-storage-lfs` repo. Hosted on Cloudflare Workers Static Assets (`color-ontology` worker, route `color.isayenko.net`). Needs Node >= 22.9.
 
 ```sh
 npm install
 npm start          # local dev server
-npm run build      # -> _site/
+npm run build      # build:learn (Vite islands) + eleventy -> _site/
 npm test           # colour maths + page tests; the browser smoke test skips without Chromium
 npm run names      # regenerate web/_data/colourNames.json (--check verifies)
 npm run deploy     # build + wrangler deploy (needs CLOUDFLARE_API_TOKEN)

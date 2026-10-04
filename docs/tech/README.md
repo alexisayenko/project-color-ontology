@@ -6,7 +6,7 @@ Product / business / UX live in their own sections.
 
 ## Current stack
 
-Eleventy 3, plain CSS, native ES modules (no bundler), Three.js r128 vendored in `web/assets/vendor/three/`. Hosted on Cloudflare Workers Static Assets: worker `color-ontology`, route `color.isayenko.net` (`custom_domain = true`). Node >= 22.9.
+Eleventy 3, plain CSS, native ES modules (no bundler) for the lab pages, Three.js r128 vendored in `web/assets/vendor/three/`. The learning pages are React 19 + Tailwind 4 islands (`apps/learn/`, Vite 8 -> `web/assets/learn/`, gitignored, rebuilt by `npm run build`). Hosted on Cloudflare Workers Static Assets: worker `color-ontology`, route `color.isayenko.net` (`custom_domain = true`). Node >= 22.9.
 
 ## Common slots
 
