@@ -11,6 +11,8 @@ A colour has a place in each coordinate system (sRGB, OKLCH, hue wheel) and a na
 
 ## Product
 
+Product name: **Colorifica** (chosen 2026-10-13; repo name stays project-color-ontology).
+
 A personal, public, interactive study of colour ordering. Visitors turn and slice the RGB cube, switch to OKLCH or the hue wheel, and read colour names. No accounts, no monetization; it moved here from the homepage Lab (isayenko.net).
 
 ## Tech stack
